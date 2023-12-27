@@ -1,6 +1,6 @@
 import React from 'react'
 import InputForm from './InputForm'
-import './Mainpage.css';
+// import './Mainpage.css';
 
 const MainPage = () => {
   return (
