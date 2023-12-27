@@ -4,7 +4,7 @@ import React from 'react'
 
 function client() {
   return (
-    <div style={{backgroundColor: 'yellow'}}>
+    <div>
         <MainPage/>
     </div>
   )

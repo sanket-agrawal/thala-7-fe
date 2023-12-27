@@ -8,10 +8,12 @@ function InputForm() {
   const [inputValue, setInputValue] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [logic,setLogic] = useState('');
+  const [message,setMessage] = useState('');
 
   const handleSubmit = () => {
     const response = anaylzeString(inputValue);
     setLogic(response.logic);
+    setMessage(response.message);
     if(response){
       setShowModal(true);
       setInputValue(''); 
@@ -39,6 +41,7 @@ function InputForm() {
       </form>
       {showModal && (
         <Modal
+        message = {message}
         logic={logic}
         backgroundAudio='/dhoni_music.mp3'
           videoSource='/dhoni.mp4'

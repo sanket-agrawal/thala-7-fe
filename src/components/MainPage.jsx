@@ -1,9 +1,10 @@
 import React from 'react'
 import InputForm from './InputForm'
+import './Mainpage.css';
 
 const MainPage = () => {
   return (
-    <div style={{backgroundColor : 'yellow'}}>
+    <div>
         <InputForm/>
     </div>
   )

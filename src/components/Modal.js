@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import './Modal.css';
 
-function Modal({ videoSource, logic, onClose , backgroundAudio}) {
+function Modal({ videoSource, logic, onClose ,message, backgroundAudio}) {
   useEffect(() => {
     const audio = new Audio(backgroundAudio);
     audio.play();
@@ -25,10 +25,10 @@ function Modal({ videoSource, logic, onClose , backgroundAudio}) {
         </video>
 
         <div className="additional-content">
+          <p>{message}</p>
           <p>{logic}</p>
         </div>
 
-        {/* Close button */}
         <button className="close-button" onClick={onClose}>
           <span>&times;</span>
         </button>
