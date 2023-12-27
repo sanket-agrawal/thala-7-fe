@@ -12,6 +12,7 @@ function InputForm() {
 
   const handleSubmit = () => {
     const response = anaylzeString(inputValue);
+    console.log('Form submitted!',response.logic);
     setLogic(response.logic);
     setMessage(response.message);
     if(response){
